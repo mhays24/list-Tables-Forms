@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        table {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr bgcolor="yellow" style="color: red;">
+                <th colspan="2" style="background-color: #fefea8; text-align: center; font-size: 20pt;"><b>Registration Form</b></th>
+            </tr>
+            <tr bgcolor="sky blue">
+                <td>
+                    <label for="Name">Enter Name</label>
+                </td>
+                <td>
+                    <input type="text" id="Name" name="Name">
+                </td>
+            </tr>
+            <tr bgcolor="sky blue">
+                <td>
+                    <label for="Password">Enter Password</label>
+                </td>
+                <td>
+                    <input type="password" id="Password" name="Password">
+                </td>
+            </tr>
+            <tr bgcolor="sky blue">
+                <td>
+                    <label for="Address">Enter Address</label>
+                </td>
+                <td>
+                    <textarea id="Address" name="Address" rows="4" cols="25"></textarea>
+                </td>
+            </tr>
+            <tr bgcolor="sky blue">
+                <td>Select Game</td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="game" value="hockey"> Hockey
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="game" value="football"> Football
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="game" value="badminton"> Badminton
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="game" value="cricket"> Cricket
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="game" value="volleyball"> Volleyball
+                    </label>
+                </td>
+            </tr>
+            
+            <tr bgcolor="sky blue">
+                <td>Gender</td>
+                <td>
+                    <label>
+                        <input type="radio" name="gender" value="male" style="border-radius: 50%;"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" style="border-radius: 50%;"> Female
+                    </label>
+                </td>
+            </tr>
+            
+                <tr bgcolor="sky blue">
+                    <td>Select your age</td>
+                    <td>
+                        <select name="age">
+                            <option value="chose">Select</option>
+                            <option value="10-15">10-15</option>
+                            <option value="15-20">15-20</option>
+                            <option value="20-25">20-25</option>
+                            <option value="25-30">25-30</option>
+                        </select>
+                    </td>
+                </tr>
+            <tr bgcolor="sky blue">
+                <td>Select Photo</td>
+                <td>
+                    <input type="file" name="photo">
+                </td>
+            </tr>
+            
+            <tr bgcolor="skyblue">
+                <td colspan="2" bgcolor="sky blue">
+                    <button type="button" style="height: 30pt; width: 100pt;">Click Me</button>
+                    <button type="reset" style="height: 30pt; width: 100pt;">Reset</button>
+                    <button type="submit" style="height: 30pt; width: 100pt;">Submit Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
